@@ -1,1 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <h1>ADD 2 NUMBERS</h1>
+    </head>
 
+    <body>
+        <label> First Number</label>
+        <input id="n1" type="number"> <br>
+        <label> Second Number</label>
+        <input id="n2" type="number"> <br>
+
+        <br>
+
+        <label for="sum" id="sumlabel">The Sum is</label>
+        <input id="sum" name="sum" type="number" readonly>
+
+        <script>
+                document.getElementById("n1").addEventListener("keyup", function(){
+                     computesum();
+                });
+
+                document.getElementById("n2").addEventListener("keyup", function(){
+                    computesum();
+                });
+
+                function computesum() {
+                    let a, b, c;
+
+                    a = document.getElementById("n1").value*1;
+                    b = document.getElementById("n2").value*1;
+                    c = a+b
+
+                    document.getElementById("sum").value = c;
+                }
+        </script>
+    </body>
+ </html>
