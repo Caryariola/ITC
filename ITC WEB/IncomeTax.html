@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Income Tax Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/calculator.css">
+        <style>
+            body {
+                font-family: "Lato", sans-serif
+            }
+            .mySlides {
+                display: none
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Conversion      <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="CtoF.html" class="w3-bar-item w3-button">Celsius to Fahrenheit</a>
+                        <a href="FtoC.html" class="w3-bar-item w3-button">Fahrenheit to Celsius</a>
+                        <a href="MtoFt.html" class="w3-bar-item w3-button">Meters to Feet</a>
+                        <a href="FttoM.html" class="w3-bar-item w3-button">Feet to Meters</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">Calculator      <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="IncomeTax.html" class="w3-bar-item w3-button">Income Tax Calculator</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More">First N Natural Numbers and Loops     <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="nth_sum.html" class="w3-bar-item w3-button">Sum of Natural Numbers with Do While Loop</a>
+                        <a href="nth_factorial.html" class="w3-bar-item w3-button">Factorial of Natural Numbers with While Loop</a>
+                        <a href="nth_average.html" class="w3-bar-item w3-button">Average of Natural Numbers with For Loop</a>
+                    </div>
+                </div>
+                <a href="simplepayroll.html" class="w3-bar-item w3-button w3-padding-large" >Simple Payroll</a> 
+            </div>
+        </div>
+        <div class="w3-content" style="max-width:2000px;margin-top:46px">
+            <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+                <h1>
+                    Income Tax Calculator
+                </h1>
+                <div class="container">
+                    <div class="box-1">
+                        <label>Enter Income:</label><br>
+                        <input id="Inc" type="text">
+                        <br>
+                        <button class="button" id="Calculate">Calculate</button>
+                    </div>
+                    <div class="box-1">
+                        <label >Income Tax: </label><br>
+                        <input id="Inct" type="text" class="talign">
+                        <br>
+                        <button class="button" onclick="Clearval()">Clear Values</button>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <table border="1" class="position">
+                        <thead>
+                            <tr>
+                                <td style="text-align: center;">No.</td>
+                                <td>Income Amount</td>
+                                <td>Income Tax</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tablelist">
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td style="color: white;">- </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button id="delh" class="delh">Delete History</button>
+                </div>
+                <script src="js/calculator.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
