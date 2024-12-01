@@ -58,13 +58,13 @@ table.position thead td{
     padding-left: 10px;
     padding-right: 30px;
     text-align: left;
-    border: 2px solid #a8a6a6; 
+    border: 1px solid #a8a6a6; 
     background-color: #ddd;
 }
 table.position tbody tr{
     background-color: rgb(255, 255, 255);
     text-align: left; 
-    border: 2px #a8a6a6;
+    border: 1px #a8a6a6;
 }
 table.position tbody tr td:nth-child(2),
 table.position tbody tr td:nth-child(3),
