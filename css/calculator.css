@@ -34,25 +34,21 @@
     border: 1px solid black;
     margin: 10px;
     border-radius: 8px;
-
-
 }
 .talign{
     text-align: center;
     align-content: center;
-
 }
 table.position {
-    width: 80%; /* Make the table take up the full width */
-    margin-top: 20px; /* Add spacing above the table */
+    width: 80%; 
+    margin-top: 20px; 
     border-collapse: collapse;
- /* Merge table borders */
 }
 
 table.position thead td{
     padding-left: 10px;
     text-align: left;
-    border: 2px solid #a8a6a6; /* Add a border to table cells */
+    border: 2px solid #a8a6a6; 
     background-color: #ddd;
 }
 table.position tbody tr{
