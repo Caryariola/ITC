@@ -2,12 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
     flex-direction: row;
     align-items: flex-start;
     align-content: space-between;
-    margin: 50px;
+    margin: 20px;
 }
 .container{
     display: flex;
@@ -26,12 +26,11 @@
     position: relative;
     gap: 10px;
     margin-bottom: 20px;
-    border: 0px black solid;
+    border: 1px black solid;
     justify-content: center;
     align-items: center ;
     align-content: space-between;
     flex-direction: row; 
-    align-items: flex-start;
 }
 .box-1{
     display: flex;
@@ -49,8 +48,7 @@
     align-content: center;
 }
 table.position {
-    width: 100%;
-    margin: 0px; 
+    margin: 20px; 
     border-collapse: collapse;
 }
 
