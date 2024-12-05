@@ -20,9 +20,6 @@
     border-radius: 5px;
 }
 .container-2{
-    
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     gap: 10px;
     margin-bottom: 20px;
